@@ -1,0 +1,87 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    font-family: 'Arial', sans-serif;
+}
+
+div {
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    background-color: #1e1e1e; /* Slightly lighter background for the calculator */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 28px;
+    color: #ffffff; /* White text color */
+    background-color: #424242; /* Input background */
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    outline: none;
+}
+
+h5 {
+    color: #ff9800; /* Orange color for the answer text */
+    text-align: center;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    color: #ffffff; 
+    background-color: #ff5722; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="button"]:hover {
+    background-color: #e64a19; 
+    transform: scale(1.05);
+}
+
+input[value="AC"],
+input[value="+/-"],
+input[value="%"] {
+    background-color: #ff9800; 
+}
+
+input[value="/"],
+input[value="x"],
+input[value="-"],
+input[value="+"] {
+    background-color: #f57c00; 
+}
+
+input[value="="] {
+    background-color: #ffb74d; 
+}
+
+input[value="00"],
+input[value="0"],
+input[value="."] {
+    background-color: #ff5722; 
+}
